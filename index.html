@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<!--Made with the "Startup Template" on w3schools.com -->
+
+<!--Started with the "Startup Template" on w3schools.com, heavily modified by first_name last_name -->
+
 <html>
 <title>Pentagonite Studios</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/MainStyle.css">
+<link rel="stylesheet" href="MainStyle.css">
 <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -14,12 +16,12 @@ body, html {
     line-height: 1.8;
 }
 
-/* Full height image header */
+/*Image header */
 .bgimg-1 {
     background-position: center;
     background-size: cover;
     /*CHANGE ME*/
-    background-image: url("");
+    background-color: #044F90;
     min-height: 75%;
 }
 .w3-bar .w3-button {
@@ -29,38 +31,35 @@ body, html {
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar pentagonite-dark w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">Pentagonite Studios</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About Me</a>
-      <a href="/Gallery.html" class="w3-bar-item w3-button">Gallery</a>
-      <a href="/Store.html" class="w3-bar-item w3-button">Store</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-      <a href="" class="w3-bar-item w3-button">Blog</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
+<div id="NavBar" class="w3-bar pentagonite-dark w3-card">
+  <a href="#home" class="w3-bar-item w3-button w3-wide">Pentagonite Studios</a>
+  <!-- Right-sided navbar links -->
+  <div class="w3-right w3-hide-small">
+    <a href="#about" class="w3-bar-item w3-button">About Me</a>
+    <a href="/Gallery.html" class="w3-bar-item w3-button">Gallery</a>
+    <a href="/Store.html" class="w3-bar-item w3-button">Store</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="/Blog" class="w3-bar-item w3-button">Blog</a>
   </div>
+  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+<nav class="w3-sidebar w3-bar-block pentagonite-dark w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
   <a href="/Gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">Gallery</a>
   <a href="/Store.html" onclick="w3_close()" class="w3-bar-item w3-button">Store</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
-  <a href="" class="w3-bar-item w3-button">Blog</a>
+  <a href="/Blog" class="w3-bar-item w3-button">Blog</a>
 </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
+  <div class="w3-display-left white-text" style="padding:48px">
     <span class="w3-hide-small"></span><br>
     <span class="w3-jumbo w3-hide-small">Welcome to Pentagonite Studios!</span><br>
     <span class="w3-large">The work of first_name last_name</span>
@@ -84,7 +83,21 @@ body, html {
 
 <!-- About Section -->
 <div class="w3-container pentagoniteblue" style="padding:64px 16px" id="about">
+  <h3 class="w3-center">About Pentagonite Studios</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:16px margin-bottom:16px">
+    <div class="w3-full">
+      <p>Pentagonite Studios was made to house the works of first_name last_name (a portfolio) as well as a site to see anything else going on with first_name. He will be taking over the text in the "About Me' section below.<br></p>
+      <p class = "w3-small">PS: first_name also loves rocks and minerals, hence the name</p>
+    </div>
+  </div>
+</div>
+<div class="w3-container pentagoniteblue" style="padding:64px 16px" id="about">
   <h3 class="w3-center">About Me</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:16px margin-bottom:16px">
+    <div class="w3-full">
+       <p>Hi! I'm first_name last_name, a self-proclaimed artist/designer specializing in.... whatever I get my hands on! Feel free to check the gallery to see some works/projects/tests I have made! Do <a href = #contact class = "cleartextstyle">contact</a> me if you have any inquiries!</p>
+    </div>
+  </div>
   <div class="w3-row-padding w3-center" style="margin-top:16px margin-bottom:16px">
     <div class="w3-half">
       <p class="w3-large">Adaptive</p>
@@ -103,7 +116,7 @@ body, html {
     <div class="w3-col m6">
       <h3>Changing Thought into Reality</h3>
       <p>Specializing in many mediums, I have the skills it takes to change an idea into reality.</p>
-      <p><a href="#work" class="w3-button pentagonite-dark">View My Works</a></p>
+      <p><a href="/Gallery.html" class="w3-button pentagonite-dark">View My Works</a></p>
     </div>
     <div class="w3-col m6">
       <!-- IMAGE GOES UNDER HERE -->
@@ -113,7 +126,7 @@ body, html {
 </div>
 
 <!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+<div id="modal01" class="w3-modal pentagonite-dark" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
@@ -122,10 +135,10 @@ body, html {
 </div>
 
 <!-- Contact Section -->
-<div class="w3-container pentagoniteblue" style="padding:128px 16px" id="contact">
+<div class="w3-container pentagoniteblue" style="padding:64px 16px" id="contact">
   <p class="w3-center w3-large">Want to ask me a question?</p>
   <h3 class="w3-center">CONTACT</h3>
-  <div class="w3-row-padding" style="margin-top:64px">
+  <div class="w3-row-padding" style="margin-top:0px">
     <div class="w3-full">
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Massachusetts, USA</p>
       <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +01 978-284-9525</p>
@@ -147,8 +160,8 @@ body, html {
 </div>
 
 <!-- Footer -->
-<footer class="w3-center pentagonite-dark w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<footer class="w3-center pentagonite-dark" style="padding-top: 64px; padding-bottom: 32px">
+  <a href="#home" class="w3-button pentagonite-superfaded"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
@@ -203,6 +216,10 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 </script>
+<!-- Extra scripts added by me -->
+
+<script src="javascripts/Scrollbar.js"></script>
+
 <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 --><!--
 To use this code on your website, get a free API key from Google.
