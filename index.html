@@ -33,12 +33,12 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div id="NavBar" class="w3-bar pentagonite-dark">
-  <a href="#home" class="w3-bar-item w3-button w3-wide">Pentagonite Studios</a>
+  <a href="#home" class="w3-bar-item w3-button w3-wide logoback" style="padding-left: 90px">Pentagonite Studios</a>
   <!-- Right-sided navbar links -->
   <div class="w3-right w3-hide-small">
     <a href="#about" class="w3-bar-item w3-button">About Me</a>
     <a href="/Gallery.html" class="w3-bar-item w3-button">Gallery</a>
-    <a href="/Store.html" class="w3-bar-item w3-button">Store</a>
+    <!--<a href="/Store.html" class="w3-bar-item w3-button">Store</a>-->
     <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     <a href="/Blog" class="w3-bar-item w3-button">Blog</a>
   </div>
@@ -53,13 +53,13 @@ body, html {
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
   <a href="/Gallery.html" onclick="w3_close()" class="w3-bar-item w3-button">Gallery</a>
-  <a href="/Store.html" onclick="w3_close()" class="w3-bar-item w3-button">Store</a>
+  <!--<a href="/Store.html" onclick="w3_close()" class="w3-bar-item w3-button">Store</a>-->
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
   <a href="/Blog" class="w3-bar-item w3-button">Blog</a>
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-left white-text" style="padding:48px">
     <br>
     <span class="w3-jumbo w3-hide-small">Welcome to Pentagonite Studios!</span><br>
@@ -141,24 +141,28 @@ body, html {
 <!-- Contact Section -->
 <div class="w3-container pentagoniteblue" style="padding:64px 16px" id="contact">
   <p class="w3-center w3-large">Want to ask me a question?</p>
-  <h3 class="w3-center">CONTACT</h3>
+  <h3 class="w3-center">Contact Me!</h3>
   <div class="w3-row-padding" style="margin-top:0px">
-    <div class="w3-full">
+    <div class="w3-half">
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Massachusetts, USA</p>
       <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +01 978-284-9525</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: first_namelast_name@pentagonitestudios.com</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: info@pentagonitestudios.com</p>
       <br>
-      <form action="/Contacted.php" target="_blank">
+    </div>
+    <div class="w3-half">
+      <p>Currently, this site is hosted without form capabilities... Please use this button below if you with to have a form for emails.</p>
+      <a href="https://form.jotform.com/81195938303158" target="_blank" class="w3-button pentagonite-faded"><i class="fa fa-external-link"></i> Send me an Email!</a>
+      <!--<form action="Contacted.php" target="_blank">
         <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
         <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
         <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
         <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
         <p>
-          <button class="w3-button pentagonite-faded" type="submit">
+          <button class="w3-button pentagonite-faded pentagonite-superfaded-hover" type="submit">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
           </button>
         </p>
-      </form>
+      </form>-->
     </div>
   </div>
 </div>
@@ -181,7 +185,7 @@ body, html {
 <script>
 /*function myMap()
 {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  myCenter=new google.maps.LatLng(0,0);
   var mapOptions= {
     center:myCenter,
     zoom:12, scrollwheel: false, draggable: false,
