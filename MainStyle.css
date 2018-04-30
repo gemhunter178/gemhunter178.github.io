@@ -203,6 +203,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	background-color: #011323!important;
 }
 
+.pentagonite-darkish, .pentagonite-darkish-hover:hover{
+	color: #FFF!important;
+	background-color: #02294B!important;
+}
+
 .pentagonite-faded, .pentagonite-faded-hover:hover{
 	color: #FFF!important;
 	background-color: #1F83DB!important;
