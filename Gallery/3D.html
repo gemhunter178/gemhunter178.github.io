@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<!--Started with the "People Portfolio II Template" on w3schools.com, modified by first_name last_name -->
+
+<html>
+<title>Pentagonite Studios</title>
+<link rel="icon" href="../Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Hind Vadodara", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<body class="pentagoniteblue">
+
+<!-- Navbar (sit on top) -->
+<div id="NavBar" class="w3-bar pentagonite-dark">
+  <a href="../index" class="w3-bar-item w3-button w3-wide logoback" style="padding-left: 90px">Pentagonite Studios</a>
+  <!-- Right-sided navbar links -->
+  <div class="w3-right w3-hide-small">
+    <a href="../index.html#about" class="w3-bar-item w3-button">About Me</a>
+    <a href="../Gallery.html" class="w3-bar-item w3-button">Gallery</a>
+    <!--<a href="../Store.html" class="w3-bar-item w3-button">Store</a>-->
+    <a href="../index.html#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="../Blog" class="w3-bar-item w3-button">Blog</a>
+  </div>
+  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block pentagonite-dark w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close</a>
+  <a href="../index.html#about" class="w3-bar-item w3-button">About Me</a>
+  <a href="../Gallery.html" class="w3-bar-item w3-button">Gallery</a>
+  <!--<a href="../Store.html" class="w3-bar-item w3-button">Store</a>-->
+  <a href="../index.html#contact" class="w3-bar-item w3-button">Contact</a>
+  <a href="../Blog" class="w3-bar-item w3-button">Blog</a>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:72.5px" id="home">
+
+<div class="w3-container pentagoniteblue" style="padding:8px 8px" id="about">
+  <h3 class="w3-center">3D</h3>
+  <div class="w3-center">
+      <p>This is a mix of woodwork, fruit arrangements/carvings and origami (coming soon)</p>
+  </div>
+</div>
+
+  <!-- Subject Pagination -->
+  <div class="w3-center pentagonite-medium" style="padding-top: 8px">
+    <div class="w3-bar">
+      <a href="Featured.html" class="w3-bar-item w3-button"><i class="fa fa-star"></i> Featured</a>
+      <a href="Digital.html" class="w3-bar-item w3-button"><i class="fa fa-paint-brush"></i> Digital</a>
+      <a href="#home" class="w3-bar-item w3-button "><i class="fa fa-cube"></i> 3D Mediums</a>
+      <a href="2D.html" class="w3-bar-item w3-button "><i class="fa fa-pencil"></i> 2D Mediums</a>
+      <a href="Photography.html" class="w3-bar-item w3-button "><i class="fa fa-camera"></i> Photography</a>
+      <!--<a href="Music.html" class="w3-bar-item w3-button "><i class="fa fa-music"></i> Music</a>
+      <a href="Annimation.html" class="w3-bar-item w3-button "><i class="fa fa-play"></i> Annimations</a>-->
+    </div>
+  </div>
+
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="https://instagram.fbos1-1.fna.fbcdn.net/vp/a9b5b80852daff1a7406a19f5f656957/5B844A08/t51.2885-15/e35/29401290_181117949178311_7678270295286743040_n.jpg" style="width:100%" onclick="onClick(this)" alt="A Flower carved into a beet. Yes, a beet.">
+      <img src="https://instagram.fbos1-1.fna.fbcdn.net/vp/f16d6a1465020083b583c5ab0d06adbb/5B7672C3/t51.2885-15/e35/31016724_2238245243099471_7408168636789030912_n.jpg" style="width:100%" onclick="onClick(this)" alt="A Ginko Leaf carved into a Fuji Apple, 5/1/2018">
+      <img src="https://instagram.fbos1-1.fna.fbcdn.net/vp/03a2967cc2c6b3110d41b6bf2bef374f/5B9751BE/t51.2885-15/e35/29738473_225964661473318_6744481372196306944_n.jpg" style="width:100%" onclick="onClick(this)" alt="Curly Maple plate! Finished with 3+ coats of tung oil">
+    </div>
+    <div class="w3-third">
+      <img src="https://instagram.fbos1-1.fna.fbcdn.net/vp/9486107ad9563a9e881511b6fabe0145/5B997ADF/t51.2885-15/e35/28766253_153962875281353_4488898645806022656_n.jpg" style="width:100%" onclick="onClick(this)" alt="Some wooden spheres I made, finished with some pen wax">
+      <img src="https://instagram.fbos1-1.fna.fbcdn.net/vp/65685f6e69970ca5276c0995c78d08b7/5B819201/t51.2885-15/e35/30920516_198480520878977_2227179308797919232_n.jpg" style="width:100%" onclick="onClick(this)" alt="An Elm Leaf carved into a granny smith">
+      <img src="https://instagram.fbos1-1.fna.fbcdn.net/vp/39f05117250908452a5964c81335d895/5B8090BC/t51.2885-15/e35/31169585_216481135783666_7644837105918541824_n.jpg" style="width:100%" onclick="onClick(this)" alt="Blood Orange in yogurt">
+    </div>
+    <div class="w3-third">
+      <img src="https://instagram.fbos1-1.fna.fbcdn.net/vp/e59d82cf00e63cd735e60e481490cff6/5B7C4496/t51.2885-15/e35/30603345_454526754976731_8079323719933100032_n.jpg" style="width:100%" onclick="onClick(this)" alt="Dragon Fruit arranged in yogurt! These thin slices were not easy.">
+      <img src="https://instagram.fbos1-1.fna.fbcdn.net/vp/66fc2d86867afab7f61dd5b9a834f843/5B951CA9/t51.2885-15/e35/29416622_932672623570880_6677148877839138816_n.jpg" style="width:100%" onclick="onClick(this)" alt="This is a cube of solid African Blackwood, hand polished by me.<br>Note: I do not usually use threatened woods, this is a cut off from others">
+      <img src="https://instagram.fbos1-1.fna.fbcdn.net/vp/5258a360be26c2883781bb3a89025df0/5B9B0641/t51.2885-15/e35/29403662_1887848127900767_288920414187421696_n.jpg" style="width:100%" onclick="onClick(this)" alt="It's a Pterodactyl, but carved into a granny smith!">
+    </div>
+ 
+  </div>
+
+  <!-- Pagination 
+  <div class="w3-center w3-padding-16">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button "><i class="fa fa-angle-left"></i></a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button ">2</a>
+      <a href="#" class="w3-bar-item w3-button ">3</a>
+      <a href="#" class="w3-bar-item w3-button ">4</a>
+      <a href="#" class="w3-bar-item w3-button "><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>-->
+</div>  
+
+<div id="modal01" class="w3-modal pentagonite-dark" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright"><i class="fa fa-close"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center pentagonite-dark" style="padding-top: 64px; padding-bottom: 32px">
+  <a href="#home" class="w3-button pentagonite-superfaded"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/first_name-last_name-2020066141645500"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/PentagoniteStdo"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/gemhunterdoesart/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <!--<i class="fa fa-snapchat w3-hover-opacity"></i>-->
+    <a href="https://gemhunter178.deviantart.com/"><i class="fa fa-deviantart w3-hover-opacity"></i></a>
+    <!--<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>-->
+  </div>
+  <p>Template from <a href="https://www.w3schools.com" title="W3.CSS" target="_blank" class="pentagoniteblue-text-hover">w3schools.com</a>, edited and adapted by first_name last_name</p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<!-- Extra scripts added by me -->
+
+<script src="../javascripts/Scrollbar.js"></script>
+
+</body>
+</html>
