@@ -241,6 +241,17 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	background-repeat: no-repeat;
 }
 
+.gallerypic{
+	width: 100%;
+	transition: opacity .2s;
+	background-color: #555!important;
+}
+
+.gallerypic:hover{
+	opacity: .75;
+	filter: alpha(opacity=75); /* For IE8 and earlier */
+	cursor:pointer;
+}
 .text-next-to-slant{
 	position:absolute;
 	width: 50%;
