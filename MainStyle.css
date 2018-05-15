@@ -188,6 +188,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	color:#FFF!important;
 }
 
+.whitecolor, .whitecolor-hover:hover{
+	color: #010110!important;
+	background-color: #FFF!important;
+}
+
 .pentagoniteblue, .pentgoniteblue-hover:hover{
 	color: #FFF!important;
 	background-color: #044F90!important;
