@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+
+<!--Started with some template on w3schools.com, heavily modified by first_name last_name -->
+
+<html>
+
+<head>
+
+	<title>The Blog of first_name last_name</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body class="pentagonite-superfaded">
+	
+	<!-- STUFF GOES HERE -->
+	<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+		<div class="w3-twothird">
+			 <div class="w3-card-4 w3-margin whitecolor">
+    <div style="max-height: 300px!important; overflow: hidden">
+      <a href="https://c1.staticflickr.com/1/830/41331080155_194247317e_k.jpg" target="_blank"><img src="https://c1.staticflickr.com/1/830/41331080155_194247317e_k.jpg" alt="The Adelaide from our classroom" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+    </div>
+    <div class="w3-container">
+      <h3><b>First Break Day of 2</b></h3>
+      <h5>Finally Break! <span class="w3-opacity">May 20th, 12018</span></h5>
+    </div>
+    <div class="w3-container">
+      <p style="text-indent: 25px">I'm Aware I didn't manage to get a post out yesterday... I had to get the 18th's post up first. You can also find that post at <a href="https://web.northeastern.edu/ar-doc/2018/05/18/day-4-talking-to-strangers/">https://web.northeastern.edu/ar-doc/2018/05/18/day-4-talking-to-strangers/</a>. There you can also find other posts from our trip!
+      </p><p style="text-indent: 25px">Ok, anyway. I might either take a break today.... or finally get to making more art for the website. Time will tell.
+      </p><p style="text-indent: 25px">Anyways, I should get on track t doing of of those things. I may or may not update this post later...
+      </p>
+      
+      </div>
+	<div class="w3-row">
+        	<div class="w3-col m8 s12" style="margin-left: 16px">
+        	  <a href="/Blog"><p><button class="w3-button w3-padding-large whitecolor w3-border"><b>Back to the Blog! »</b></button></p></a>
+        	</div>
+    	</div>
+     </div>
+		</div>
+		<div class="w3-third">
+			<div includehtml="/Blog/blogside.html"></div>
+		</div>
+	
+	</div>
+	<div includehtml="/Pageinclude/BlogBar.html"></div>
+<!-- END OF STUFF -->
+
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+	</script>
+
+	
+	<!-- Extra scripts added by me -->	
+	<script src="/javascripts/includehtml.js"></script>
+
+	<script>
+	
+		includeHTML();
+	</script>
+
+
+</body>
+
+</html>
