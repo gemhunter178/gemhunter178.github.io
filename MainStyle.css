@@ -258,11 +258,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .galleryback{
-	-webkit-filter: saturate(80%); /* Safari 6.0 - 9.0 */
-	filter: saturate(80%);
+	-webkit-filter: brightness(80%); /* Safari 6.0 - 9.0 */
+	filter: brightness(80%);
 	background: url(/Pictures/Gallery_back.png);
 	background: url(/Pictures/Gallery_back.svg), linear-gradient(transparent, transparent);
-	background-repeat: repeat;
+	background-size:50%;
+	background-repeat:repeat;
 }
 
 .text-next-to-slant{
