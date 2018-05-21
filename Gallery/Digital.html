@@ -1,5 +1,151 @@
 <!DOCTYPE html>
 
+
+<!--Started with some template on w3schools.com, heavily modified by first_name last_name -->
+
+<html>
+
+<head>
+
+	<title>Pentagonite Studios</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body class="pentagoniteblue">
+	
+	<div includehtml="/Pageinclude/pagetopbar.html"></div> 
+	
+	<!-- STUFF GOES HERE -->
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:72.5px" id="home">
+
+<div class="w3-container pentagoniteblue" style="padding:8px 8px" id="content">
+  <h3 class="w3-center">Digital</h3>
+  <div class="w3-center">
+      <p>This is anything fully made in a computer, minus the annimations and such (coming soon?)</p>
+  </div>
+</div>
+	<!-- Subject Pagination-->
+	<div includehtml="/Pageinclude/gallerypages.html"></div>
+
+  <!-- Photo grid -->
+
+  <!-- split section -->
+  </div>
+  <div class="w3-row">
+    <div class="w3-half">
+            <img src="/Pictures/Main_banner.jpg" style="width:100%" onclick="onClick(this)" alt="Welcome to Pentagonite Studios!<br>The main banner image in glorious 4K">
+   </div>
+    
+   <div class="w3-half">
+
+    </div>
+  </div>
+ 
+<!-- REFERENCE for extra pics: <img src="" class="gallerypic" onclick="onClick(this)" alt=""> -->
+
+
+  <!-- Pagination 
+  <div class="w3-center w3-padding-16">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button "><i class="fa fa-angle-left"></i></a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button ">2</a>
+      <a href="#" class="w3-bar-item w3-button ">3</a>
+      <a href="#" class="w3-bar-item w3-button ">4</a>
+      <a href="#" class="w3-bar-item w3-button "><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>-->
+</div>  
+
+<div id="modal01" class="w3-modal pentagonite-dark" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright"><i class="fa fa-close"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+</div>
+<!-- END OF STUFF -->
+
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+	// Toggle between showing and hiding the sidebar when clicking the menu icon
+	var NavBar = document.getElementById("NavBbar");
+	function w3_open() {
+		if (mySidebar.style.display === 'block') {
+			mySidebar.style.display = 'none';
+		} else {
+			mySidebar.style.display = 'block';
+		}
+	}
+	// Close the sidebar with the close button
+	function w3_close() {
+		mySidebar.style.display = "none";
+	}
+	</script>
+
+	
+	<!-- Extra scripts added by me -->	
+	<script src="/javascripts/includehtml.js"></script>
+
+	<script src="/javascripts/Scrollbar.js"></script>
+
+	<script>
+	
+		includeHTML();
+	</script>
+
+
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+
 <!--Started with the "People Portfolio II Template" on w3schools.com, modified by first_name last_name -->
 
 <html>
@@ -78,7 +224,7 @@ body, html {
   </div>
   <div class="w3-row">
     <div class="w3-half">
-            <img src="../Pictures/Main_banner.jpg" style="width:100%" onclick="onClick(this)" alt="Welcome to Pentagonite Studios!<br>The main banner image in glorious 4K">
+            <img src="/Pictures/Main_banner.jpg" style="width:100%" onclick="onClick(this)" alt="Welcome to Pentagonite Studios!<br>The main banner image in glorious 4K">
    </div>
     
    <div class="w3-half">
