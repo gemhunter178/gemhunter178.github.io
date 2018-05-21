@@ -258,11 +258,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .galleryback{
-	-webkit-filter: brightness(60%) saturate(120%); /* Safari 6.0 - 9.0 */
-	filter: brightness(60%) saturate(120%);
 	background: url(/Pictures/Gallery_back.png);
 	background: url(/Pictures/Gallery_back.svg), linear-gradient(transparent, transparent);
-	background-size: 824px 285px;
 	background-repeat:repeat;
 }
 
