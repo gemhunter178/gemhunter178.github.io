@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+
+<!--Started with some template on w3schools.com, heavily modified by first_name last_name -->
+
+<html>
+
+<head>
+
+	<title>The Blog of first_name last_name - Page 3</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body class="pentagonite-superfaded">
+	
+	<!-- STUFF GOES HERE -->
+	<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+		<div includehtml="/Blog/Header.html"></div>
+		<div class="w3-twothird">
+			<div includehtml="/Blog/052412018.html"></div>
+			<!--<div includehtml="/Blog/052512018.html"></div>
+			<div includehtml="/Blog/052612018.html"></div>-->
+		</div>
+		<div class="w3-third">
+			<div includehtml="/Blog/blogside.html"></div>
+		</div>
+	</div>
+	<div includehtml="/Blog/blogpages1.html"></div>
+	<div includehtml="/Pageinclude/BlogBar.html"></div>
+<!-- END OF STUFF -->
+
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+
+
+	// Toggle between showing and hiding the sidebar when clicking the menu icon
+	var NavBar = document.getElementById("NavBar");
+
+	function w3_open() {
+		if (mySidebar.style.display === 'block') {
+			mySidebar.style.display = 'none';
+		} else {
+			mySidebar.style.display = 'block';
+		}
+	}
+
+	// Close the sidebar with the close button
+	function w3_close() {
+		mySidebar.style.display = "none";
+	}
+	</script>
+
+	
+	<!-- Extra scripts added by me -->	
+	<script src="/javascripts/includehtml.js"></script>
+
+	<script>
+	
+		includeHTML();
+
+	</script>
+
+
+</body>
+
+</html>
