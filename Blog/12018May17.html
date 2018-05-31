@@ -67,7 +67,7 @@ body, html {
     </div>
 	<div class="w3-row">
         	<div class="w3-col m8 s12" style="margin-left: 16px">
-        	  <a href="/Blog"><p><button class="w3-button w3-padding-large whitecolor w3-border"><b>Back to the Blog! »</b></button></p></a>
+        	  <p><button onclick="goBack()" class="w3-button w3-padding-large whitecolor w3-border"><b>Go back! »</b></button></p>
         	</div>
     	</div>
      </div>
@@ -94,6 +94,12 @@ body, html {
 	
 	<!-- Extra scripts added by me -->	
 	<script src="/javascripts/includehtml.js"></script>
+	
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
 
 	<script>
 	
