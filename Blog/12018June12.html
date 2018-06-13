@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+
+<!--Started with some template on w3schools.com, heavily modified by first_name last_name -->
+
+<html>
+
+<head>
+
+	<title>June 12th, 12018 - The Blog of first_name last_name</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body class="pentagonite-superfaded">
+	
+	<!-- STUFF GOES HERE -->
+	<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+		<div class="w3-twothird">
+			 <div class="w3-card-4 w3-margin whitecolor">
+    <div style="max-height: 300px!important; overflow: hidden">
+      <a href="https://www.flickr.com/photos/157149974@N06/42046855804/in/shares-GS1zXN/" target="_blank"><img src="https://c1.staticflickr.com/1/888/42046855804_355246744c_k.jpg" alt="I think this was called a Californing lilac? - Ceanothus"class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+    </div>
+    <div class="w3-container">
+      <h3><b>Work and Botanical Gardens</b></h3>
+      <h5>A break is nice <span class="w3-opacity">June 12th, 12018</span></h5>
+    </div>
+    <div class="w3-container">
+      <p style="text-indent: 25px">Today is our only official day off here in Sheffield. So, what do I do? I keep working (which is what I did yesterday). I did make time in my schedule to look at some gift shops as well as visit the <a href="http://www.sbg.org.uk/" target="_blank">Sheffield Botanical Gardens</a>, which I will probably be talking about today.
+      </p><p style="text-indent: 25px">Of course, I also went back to the AR section for the final day of the festival to say "see you later" to those I have made friends with. It's bittersweet.
+      </p><p style="text-indent: 25px">Anyways, I walked over to the botanical gardens, camera in hand. On the way, birds chirped as I passed a park. The city seemed to give way into a dense town. There were so many trees around.
+      </p><p style="text-indent: 25px">I arrived at the garden and walked though the lare gates that marked the entrance. I walked pass some well planted flower beds and made my way to the "glass pavilon" (which is a very long greenhouse with plants of all continents minus Antarctica).
+      </p><p style="text-indent: 25px">After my visit to the greenhouse, I managed to walk through and experience every garden with a topic as well as a large portion of the Gardens. I specifically liked the trees and the rose garden.
+      </p><p style="text-indent: 25px">Want some more pictures from this trip? I may put them here later. If not, contact me?
+      </p>
+      
+<!--Need a new paragraph?: <p style="text-indent: 25px">
+      </p>-->
+      
+      </div>
+	<div class="w3-row">
+        	<div class="w3-col m8 s12" style="margin-left: 16px">
+        	  <p><button onclick="goBack()" class="w3-button w3-padding-large whitecolor w3-border"><b>Go back! »</b></button></p>
+        	</div>
+    	</div>
+     </div>
+		</div>
+		<div class="w3-third">
+			<div includehtml="/Blog/blogside.html"></div>
+		</div>
+	
+	</div>
+	<div includehtml="/Pageinclude/BlogBar.html"></div>
+<!-- END OF STUFF -->
+
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+	</script>
+
+	
+	<!-- Extra scripts added by me -->	
+	<script src="/javascripts/includehtml.js"></script>
+	
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
+
+	<script>
+		includeHTML();
+	</script>
+
+
+</body>
+
+</html>
