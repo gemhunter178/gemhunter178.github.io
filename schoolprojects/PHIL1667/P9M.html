@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+
+<!--Started with the "Startup Template" on w3schools.com, heavily modified by first_name last_name -->
+
+<html>
+
+<head>
+
+	<title>A Hero's Journey Game - Gemhunter178</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body>
+	
+	<div includehtml="/Pageinclude/pagetopbar.html"></div> 
+	
+	<!-- STUFF GOES HERE -->
+<style>
+		/*Image header */
+		.bgimg-1 {
+			background-position: center;
+			background-size: cover;
+			background-image: url("https://orig00.deviantart.net/5e34/f/2018/147/a/b/drawing_space_by_gemhunter178-dccooan.jpg");
+			min-height: 25%;
+		}
+		.w3-bar .w3-button {
+			padding: 16px;
+		}
+	</style>
+
+<header class="bgimg-1 w3-display-container" id="home">
+	</header>
+<!-- Game choices -->
+
+	<div class="w3-container pentagonite-superfaded" style="padding:64px 16px" id="description">
+  
+  <!-- HERE BE THE TITLE -->
+		<h3 class="w3-center">What can stop you?</h3>
+  
+		<div class="w3-row-padding w3-center" style="margin-top:16px margin-bottom:16px">
+    
+			<div class="w3-full">
+       
+       <!-- HERE BE THE DESC -->
+				<p>If everyone could run, what is stopping them? What is stopping you?</p>
+    
+			</div>
+  
+		</div>
+  
+		<div class="w3-row-padding w3-center" style="margin-top:16px margin-bottom:16px">
+    
+			<div class="w3-third">
+      
+      <!-- HERE BE CHOICE 1 -->
+				<p class="w3-large">Work</p>
+      
+				<p>I have work to attend to.</p>
+        
+        <p><a href="P2H.html" class="w3-button pentagonite-darkish">Work</a></p>
+    
+			</div>
+    
+			<div class="w3-third">
+      
+      <!-- HERE BE CHOICE 2 -->
+				<p class="w3-large">A force</p>
+      
+				<p>There's a force that can stop me</p>
+        
+        <p><a href="P4F.html" class="w3-button pentagonite-darkish">Some Force</a></p>
+    
+			</div>
+      
+ 			<div class="w3-third">
+      
+      <!-- HERE BE CHOICE 3 -->
+				<p class="w3-large">I have friends</p>
+      
+				<p>I have friends that I might need to save</p>
+        
+        <p><a href="P0M.html" class="w3-button pentagonite-darkish">Friends</a></p>
+    
+			</div>
+  
+		</div>
+
+	</div>
+
+	
+
+
+	
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+		
+	// Modal Image Gallery
+	function onClick(element) {
+	  document.getElementById("img01").src = element.src;
+	  document.getElementById("modal01").style.display = "block";
+	  var captionText = document.getElementById("caption");
+	  captionText.innerHTML = element.alt;
+	}
+	
+	
+	// Toggle between showing and hiding the sidebar when clicking the menu icon
+	var NavBar = document.getElementById("NavBar");
+	
+	function w3_open() {
+	    if (mySidebar.style.display === 'block') {
+	        mySidebar.style.display = 'none';
+	    } else {
+	        mySidebar.style.display = 'block';
+	    }
+	}
+	
+	// Close the sidebar with the close button
+	function w3_close() {
+	    mySidebar.style.display = "none";
+	}
+	</script>
+	<script src="/javascripts/includehtml.js"></script>
+	<script src="/javascripts/Scrollbar.js"></script>
+
+	<script>
+	
+		includeHTML();
+	</script>
+
+</body>
+
+</html>
