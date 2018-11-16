@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+
+<!--Started with the "Startup Template" on w3schools.com, heavily modified by first_name last_name -->
+
+<html>
+
+<head>
+
+	<title>A Hero's Journey Game - Gemhunter178</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body>
+	
+	<div includehtml="/Pageinclude/pagetopbar.html"></div> 
+	
+	<!-- STUFF GOES HERE -->
+	<style>
+		/*Image header */
+		.bgimg-1 {
+			background-position: center;
+			background-size: cover;
+			background-image: url("https://orig00.deviantart.net/5e34/f/2018/147/a/b/drawing_space_by_gemhunter178-dccooan.jpg");
+			min-height: 25%;
+		}
+		.w3-bar .w3-button {
+			padding: 16px;
+		}
+	</style>
+
+<header class="bgimg-1 w3-display-container" id="home">
+	</header>
+<!-- Game choices -->
+
+	<div class="w3-container pentagonite-superfaded" style="padding:64px 16px" id="description">
+  
+		<h3 class="w3-center">If you are <i>really</i> human...</h3>
+  
+		<div class="w3-row-padding w3-center" style="margin-top:16px margin-bottom:16px">
+    
+			<div class="w3-full">
+       
+				<p>I would choose one of the other classes. Here, to help you out-</p>
+    
+			</div>
+  
+		</div>
+  
+		<div class="w3-row-padding w3-center" style="margin-top:16px margin-bottom:16px">
+    
+			<div class="w3-third">
+      
+				<p class="w3-large">A Poor Upbringing</p>
+      
+				<p>You were born poor... or at least, that's what your current situation feels like. You may not know who family are or where your next meal is coming from, but, maybe you'll serve a greater purpose?</p>
+        
+        <p><a href="P1H.html" class="w3-button pentagonite-darkish">Where's my portion?</a></p>
+    
+			</div>
+    
+			<div class="w3-third">
+      
+				<p class="w3-large">High Class</p>
+      
+				<p>You are part of the higher class in your society. People run on your schedule and there is almost nothing that can stop you from getting anything you want. It's maybe a little <i>too</i> easy...</p>
+        
+        <p><a href="H5F.html" class="w3-button pentagonite-darkish">Let's take a stroll!</a></p>
+    
+			</div>
+      
+ 			<div class="w3-third">
+      
+				<p class="w3-large">Somewhere in the middle</p>
+      
+				<p>You are not quite rich, but you don't have to worry about finding your next meal either. To most, you are "normal". Maybe something will make that change?</p>
+        
+        <p><a href="M4R.html" class="w3-button pentagonite-darkish">Eh, to work I guess...</a></p>
+    
+			</div>
+			
+  
+		</div>
+
+	</div>
+
+	
+
+
+	
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+		
+	// Modal Image Gallery
+	function onClick(element) {
+	  document.getElementById("img01").src = element.src;
+	  document.getElementById("modal01").style.display = "block";
+	  var captionText = document.getElementById("caption");
+	  captionText.innerHTML = element.alt;
+	}
+	
+	
+	// Toggle between showing and hiding the sidebar when clicking the menu icon
+	var NavBar = document.getElementById("NavBar");
+	
+	function w3_open() {
+	    if (mySidebar.style.display === 'block') {
+	        mySidebar.style.display = 'none';
+	    } else {
+	        mySidebar.style.display = 'block';
+	    }
+	}
+	
+	// Close the sidebar with the close button
+	function w3_close() {
+	    mySidebar.style.display = "none";
+	}
+	</script>
+	<script src="/javascripts/includehtml.js"></script>
+	<script src="/javascripts/Scrollbar.js"></script>
+
+	<script>
+	
+		includeHTML();
+	</script>
+
+</body>
+
+</html>
