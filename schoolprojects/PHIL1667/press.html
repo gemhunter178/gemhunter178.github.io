@@ -131,7 +131,7 @@ This game represents 42 characters from the 7 films we have watched in class. Th
 			</div>
   
 		</div>
-    <div class="w3-row-padding w3-center" style="margin-top:16px margin-bottom:16px">
+    <div class="w3-row-padding w3-center" style="margin-top:16px margin-bottom:48px">
     
 			<div class="w3-full">
        
@@ -162,7 +162,7 @@ Also, due to the volume of this project, some links and choices may be broken. P
     <h3 class="w3-center"><u>Restart the Game or Character Select</u></h3>
   
 		</div>
-    <div class="w3-row-padding w3-center" style="margin-top:16px margin-bottom:16px">
+    <div class="w3-row-padding w3-center" style="margin-bottom:16px">
     
 			<div class="w3-full">
        
@@ -216,28 +216,26 @@ Also, due to the volume of this project, some links and choices may be broken. P
 	<script>
 		
 	// Modal Image Gallery
+	<script>
+	// Modal Image Gallery
 	function onClick(element) {
-	  document.getElementById("img01").src = element.src;
-	  document.getElementById("modal01").style.display = "block";
-	  var captionText = document.getElementById("caption");
-	  captionText.innerHTML = element.alt;
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
 	}
-	
-	
 	// Toggle between showing and hiding the sidebar when clicking the menu icon
-	var NavBar = document.getElementById("NavBar");
-	
+	var NavBar = document.getElementById("NavBbar");
 	function w3_open() {
-	    if (mySidebar.style.display === 'block') {
-	        mySidebar.style.display = 'none';
-	    } else {
-	        mySidebar.style.display = 'block';
-	    }
+		if (mySidebar.style.display === 'block') {
+			mySidebar.style.display = 'none';
+		} else {
+			mySidebar.style.display = 'block';
+		}
 	}
-	
 	// Close the sidebar with the close button
 	function w3_close() {
-	    mySidebar.style.display = "none";
+		mySidebar.style.display = "none";
 	}
 	</script>
 	<script src="/javascripts/includehtml.js"></script>
