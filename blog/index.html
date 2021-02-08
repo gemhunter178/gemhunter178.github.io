@@ -32,26 +32,6 @@ disable_navbar: true
 			{% endfor %}
 		  <a href="/Blog/p78" class="w3-bar-item w3-button" style="color:#888!important"><i class="fa fa-angle-right"></i></a>
 		</div>
-
-		{% if 1 == 0 %}
-		<div class="pagination">
-		  {% if paginator.previous_page %}
-		    <a href="{{ paginator.previous_page_path }}" class="previous">
-		      Previous
-		    </a>
-		  {% else %}
-		    <span class="previous">Previous</span>
-		  {% endif %}
-		  <span class="page_number ">
-		    Page: {{ paginator.page }} of {{ paginator.total_pages }}
-		  </span>
-		  {% if paginator.next_page %}
-		    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-		  {% else %}
-		    <span class="next ">Next</span>
-		  {% endif %}
-		</div>
-		{% endif %}
 	</div>
 	</div>
 	<div class="w3-third">

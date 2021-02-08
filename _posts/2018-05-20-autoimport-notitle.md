@@ -15,7 +15,7 @@ Anyways, I should get on track to doing some of those things. I may or may not u
 
 Ok, I'm back. Today we went to the <a href="https://www.toronto.ca/explore-enjoy/parks-gardens-beaches/toronto-island-park/">Toronto Islands</a>. Really liked that place. No wonder people can get such great shots of the Toronto skyline! Also, so many dogs!
 
-After getting back, I've been updating the gallery pages to use a newer, template version that should make future changes easier. Hopefully I'll update the phtots themselves soon. Oh, and the <a href="/Gallery/2D">2D section</a> now exists. I haven't been able to get new paintings on there since I haven't done many recently. Perhaps I should add my sketches...
+After getting back, I've been updating the gallery pages to use a newer, template version that should make future changes easier. Hopefully I'll update the phtots themselves soon. Oh, and the <a href="{% link Gallery/2D.html %}">2D section</a> now exists. I haven't been able to get new paintings on there since I haven't done many recently. Perhaps I should add my sketches...
 
 <br>
 
