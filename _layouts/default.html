@@ -1,20 +1,41 @@
 <!DOCTYPE html>
+<!--Started with the "Startup Template" on w3schools.com, heavily modified by Gem -->
 <html>
+  <head>
+    <title>{{ page.title }}</title>
 
-  {% include head.html %}
+    <link rel="icon" href="/Pictures/Logo_favicon.png">
+    <meta charset="UTF-8">
 
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% include header.html %}
+    <link rel="stylesheet" href="/MainStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body,h1,h2,h3,h4,h5,h6 {
+        font-family: "Hind Vadodara", sans-serif
+      }
 
-    {% include footer.html %}
+      body, html {
+        height: 100%;
+        line-height: 1.8;
+      }
 
+      .w3-bar .w3-button {
+        padding: 16px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="{{ page.body_class }}">
+    {% if page.disable_navbar == nil %}
+    {% include navbar.html %}
+    {% endif %}
+    {{ content }}
+    {% include pagefooter.html %}
   </body>
-
 </html>

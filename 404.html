@@ -1,55 +1,8 @@
-<!DOCTYPE html>
-
-
-<!--Started with the "Startup Template" on w3schools.com, heavily modified by Gem -->
-
-<html>
-
-<head>
-
-	<title>Page not found! - Gemhunter178</title>
-	
-<link rel="icon" href="/Pictures/Logo_favicon.png">
-<meta charset="UTF-8">
-	
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="/MainStyle.css">
-<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<style>
-		body,h1,h2,h3,h4,h5,h6 {
-			font-family: "Hind Vadodara", sans-serif
-		}
-		
-body, html {
-    
-			height: 100%;
-    
-			line-height: 1.8;
-		
-}
-		
-.w3-bar .w3-button {
-    
-			padding: 16px;
-		
-}
-	
-</style>
-
-</head>
-
-
-
-
-<body>
-	
-	<div includehtml="/Pageinclude/pagetopbar.html"></div> 
-	
-	<!-- STUFF GOES HERE -->
+---
+layout: default
+title: Page not found! - Gemhunter178
+body_class: pentagonite-dark
+---
 
 	<style>
 /*Image header */
@@ -63,75 +16,33 @@ body, html {
     padding: 16px;
 }
 </style>
-<body class = "pentagonite-dark">
+
 <!-- Message Section -->
 <div class="w3-container bgimg-1" style="padding:64px 0px; min-height: 75%; padding-top: 190px!important " id="404">
 	<div style="background: rgba(0, 0, 0, 0.5)!important;padding-bottom: 7px;">
 		<h3 class="w3-center w3-jumbo">You're wandering a bit far!</h3>
 		<p class="w3-center w3-large">This page does not exist! I would advise you not to venture out further!</p>
-		<p class="w3-center"><a href="/index.html" class="w3-button pentagonite-darkish">Return to Main</a></p>
+		<p class="w3-center"><a href="/" class="w3-button pentagonite-darkish">Return to Main</a></p>
 	</div>
 </div>
 
 
 
 	<!-- Modal for full size images on click-->
-	
+
 <div id="modal01" class="w3-modal pentagonite-dark" onclick="this.style.display='none'">
-  
+
 		<span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image"><i class="fa fa-close"></i>
 		</span>
-  
+
 		<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    
+
 			<img id="img01" class="w3-image">
-    
+
 			<p id="caption" class="w3-opacity w3-large"></p>
-  
+
 		</div>
-	
+
 </div>
 
-	
-	
-	<div includehtml="/Pageinclude/pagefooter.html"></div> 
-	<script>
-		
-	// Modal Image Gallery
-	function onClick(element) {
-	  document.getElementById("img01").src = element.src;
-	  document.getElementById("modal01").style.display = "block";
-	  var captionText = document.getElementById("caption");
-	  captionText.innerHTML = element.alt;
-	}
-	
-	
-	// Toggle between showing and hiding the sidebar when clicking the menu icon
-	var NavBar = document.getElementById("NavBar");
-	
-	function w3_open() {
-	    if (mySidebar.style.display === 'block') {
-	        mySidebar.style.display = 'none';
-	    } else {
-	        mySidebar.style.display = 'block';
-	    }
-	}
-	
-	// Close the sidebar with the close button
-	function w3_close() {
-	    mySidebar.style.display = "none";
-	}
-	</script>
-	<script src="/javascripts/includehtml.js"></script>
-	<script src="/javascripts/Scrollbar.js"></script>
-
-	<script>
-	
-		includeHTML();
-	</script>
-
-</body>
-
-</html>
-
-
+<script src="/javascripts/Scrollbar.js"></script>

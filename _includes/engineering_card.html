@@ -1,0 +1,20 @@
+<!-- Blog entry -->
+<div class="w3-card-4 w3-margin whitecolor">
+  <div style="max-height: 300px!important; overflow: hidden">
+    <a href="{{ include.post.header_image }}" target="_blank"><img src="{{ include.post.header_image }}" alt="{{ include.post.header_alt }}" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+  </div>
+  <div class="w3-container">
+    <h3><b>{{ include.post.header }}</b></h3>
+      <h5>{{ include.post.subtitle }} <span class="w3-opacity"><i>{{ include.post.date_string }}</i></span></h5>
+  </div>
+  <div class="w3-container">
+    {{ include.post.excerpt | markdownify }}
+  </div>
+  {% if include.post.no_back_button == nil %}
+  <div class="w3-row">
+      <div class="w3-col m8 s12" style="margin-left: 16px">
+        <a href="{{ include.expand_path }}"><p><button class="w3-button w3-padding-large whitecolor w3-border"><b>READ MORE »</b></button></p></a>
+      </div>
+   </div>
+   {% endif %}
+</div>
