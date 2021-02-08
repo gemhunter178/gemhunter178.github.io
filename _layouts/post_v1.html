@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+{% capture day_num_string %}
+	{% assign d = page.date | date: "%-d" %}
+	{% case d %}
+		{% when "1" or "21" or "31" %}{{ d }}st
+		{% when "2" or "22" %}{{ d }}nd
+		{% when "3" or "23" %}{{ d }}rd
+		{% else %}{{ d }}th
+	{% endcase %}
+{% endcapture %}
+{% capture date_string %}{{ page.date | date: "%B" }} {{ day_num_string | strip }}, 1{{ page.date | date: "%Y" }}{% endcapture %}
+
+<!--Started with some template on w3schools.com, heavily modified by Gem -->
+
+<html>
+
+<head>
+
+	<title>{% if page.date_in_title != nil %}{{ date_string }} - {% endif %}The Blog of Gem</title>
+
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+
+body, html {
+
+			height: 100%;
+
+			line-height: 1.8;
+
+}
+
+.w3-bar .w3-button {
+
+			padding: 16px;
+
+}
+
+</style>
+<style>
+  .blog-post-content {
+    text-indent: 25px;
+  }
+</style>
+</head>
+
+
+
+
+<body class="pentagonite-superfaded">
+
+	<!-- STUFF GOES HERE -->
+	<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+		<div class="w3-twothird">
+			 <div class="w3-card-4 w3-margin whitecolor">
+         <div style="max-height: 300px!important; overflow: hidden">
+            <a href="{{ page.card_image }}" target="_blank"><img src="{{ page.card_image }}" alt="{{ page.card_alt }}" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+         </div>
+       <div class="w3-container">
+         <h3><b>{{ page.header }}</b></h3>
+         <h5>{{ page.subtitle }} <span class="w3-opacity">{{ date_string}}</span></h5>
+       </div>
+       <div class="w3-container blog-post-content">
+         {{ content }}
+       </div>
+	<div class="w3-row">
+        	<div class="w3-col m8 s12" style="margin-left: 16px">
+        	  <p><button onclick="goBack()" class="w3-button w3-padding-large whitecolor w3-border"><b>Go back! »</b></button></p>
+        	</div>
+    	</div>
+     </div>
+		</div>
+		<div class="w3-third">
+			{% include blogside.html %}
+		</div>
+
+	</div>
+	{% include blogbar.html %}
+<!-- END OF STUFF -->
+
+  {% include pagefooter.html %}
+
+	<!-- Extra scripts added by me -->
+
+	<script src="/javascripts/goback.js"></script>
+
+</body>
+
+</html>

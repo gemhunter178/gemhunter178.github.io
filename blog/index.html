@@ -1,0 +1,61 @@
+---
+layout: default
+title: The Blog of Gem
+body_class: pentagonite-superfaded
+disable_navbar: true
+---
+
+<!-- STUFF GOES HERE -->
+<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+	{% include blog_header.html %}
+	<div class="w3-twothird">
+		<!-- This loops through the paginated posts -->
+		{% for post in paginator.posts %}
+		  <!-- <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+		  <p class="author">
+		    <span class="date">{{ post.date }}</span>
+		  </p> -->
+		  <!-- <div class="content"> -->
+			  {% capture post_filename %}{{ post.path | split: "/" | last }}{% endcapture %}
+				{% include post_card.html post_url=post.url content=post.content header=post.header subtitle=post.subtitle card_image=post.card_image card_alt=post.card_alt %}
+		  <!-- </div> -->
+		{% endfor %}
+
+		<!-- Pagination links -->
+		<div class="w3-center w3-padding-16">
+		  <div class="w3-bar">
+		  <a href="/blog/page1" class="w3-bar-item w3-button" style="color:#888!important"><i class="fa fa-angle-left"></i></a>
+		  <a href="/blog" class="w3-bar-item w3-button">Recent</a>
+			<a href="/blog/page1" class="w3-bar-item w3-button">1</a>
+			{% for page_num in (2..paginator.total_pages) %}
+		  <a href="/blog/page{{ page_num }}" class="w3-bar-item w3-button">{{ page_num }}</a>
+			{% endfor %}
+		  <a href="/Blog/p78" class="w3-bar-item w3-button" style="color:#888!important"><i class="fa fa-angle-right"></i></a>
+		</div>
+
+		{% if 1 == 0 %}
+		<div class="pagination">
+		  {% if paginator.previous_page %}
+		    <a href="{{ paginator.previous_page_path }}" class="previous">
+		      Previous
+		    </a>
+		  {% else %}
+		    <span class="previous">Previous</span>
+		  {% endif %}
+		  <span class="page_number ">
+		    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+		  </span>
+		  {% if paginator.next_page %}
+		    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+		  {% else %}
+		    <span class="next ">Next</span>
+		  {% endif %}
+		</div>
+		{% endif %}
+	</div>
+	</div>
+	<div class="w3-third">
+		{% include blogside.html %}
+	</div>
+</div>
+<!-- END OF STUFF -->

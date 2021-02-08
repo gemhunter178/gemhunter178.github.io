@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<!--Started with the blog on w3schools.com, modified by Gem -->
+
+<html>
+<!-- Blog entry -->
+  <div class="w3-card-4 w3-margin whitecolor">
+    <div style="max-height: 300px!important; overflow:hidden">
+      <a href="{{ page.card_image }}" target="_blank"><img src="{{ page.card_image }}" alt="{{ page.card_alt }}" class="gallerypic" style="max-width: 100%; max-height: none"></a>
+    </div>
+    <div class="w3-container">
+      <h3><b>{{ page.title }}</b></h3>
+      <h5>{{ page.subtitle }} <span class="w3-opacity">{{ page.date | date: "%B" }} {{ day_num_string | strip }}, 1{{ page.date | date: "%Y" }}</span></h5>
+    </div>
+
+    <div class="w3-container">
+      {{ content }}
+    </div>
+  </div>
+</html>

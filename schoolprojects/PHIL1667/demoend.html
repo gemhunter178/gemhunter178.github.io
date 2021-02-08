@@ -1,54 +1,7 @@
-<!DOCTYPE html>
+---
+layout: phil1667
+---
 
-
-<!--Started with the "Startup Template" on w3schools.com, heavily modified by Gem -->
-
-<html>
-
-<head>
-
-	<title>A Hero's Journey Game - Gemhunter178</title>
-	
-<link rel="icon" href="/Pictures/Logo_favicon.png">
-<meta charset="UTF-8">
-	
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="/MainStyle.css">
-<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<style>
-		body,h1,h2,h3,h4,h5,h6 {
-			font-family: "Hind Vadodara", sans-serif
-		}
-		
-body, html {
-    
-			height: 100%;
-    
-			line-height: 1.8;
-		
-}
-		
-.w3-bar .w3-button {
-    
-			padding: 16px;
-		
-}
-	
-</style>
-
-</head>
-
-
-
-
-<body>
-	
-	<div includehtml="/Pageinclude/pagetopbar.html"></div> 
-	
 	<!-- STUFF GOES HERE -->
   	<style>
 		/*Image header */
@@ -64,114 +17,70 @@ body, html {
 	</style>
 
 <header class="bgimg-1 w3-display-container" id="home">
-  
+
 	<div class="w3-display-left white-text" style="padding:48px">
-    
+
 		<br>
-    
+
 		<span class="w3-jumbo w3-hide-small">You are Spock</span>
 		<br>
-    
+
 		<span class="w3-xxlarge w3-hide-large w3-hide-medium">You follow the path of Spock</span><br>
 		<span class="w3-large">"logic clearly dictates that the needs of the many outweigh the needs of the few"</span><br>
     <span class="w3-large"><i>-Spock in Star Trek II: The Wrath of Khan</i></span>
-    
+
 		<p><a href="#description" class="w3-button pentagonite-faded w3-padding-large w3-large w3-margin-top pentagonite-medium-hover w3-hover-opacity">Click here to read more</a></p>
-  
-	</div> 
-  
+
+	</div>
+
 </header>
 <!-- Game choices -->
 
 	<div class="w3-container pentagonite-superfaded" style="padding:64px 16px" id="description">
-  
+
 		<h3 class="w3-center">An Alien that is most "human"</h3>
-  
+
 		<div class="w3-row-padding w3-center" style="margin-top:16px margin-bottom:16px">
-    
+
 			<div class="w3-full">
-       
+
 				<p>In class, we watched Spock's actions on the <i>Enterprise</i> in <i>Star Trek II</i>. How do you relate?</p>
-    
+
 			</div>
-  
+
 		</div>
-  
+
 		<div class="w3-row-padding w3-center" style="margin-top:16px margin-bottom:16px">
-    
+
 			<div class="w3-half">
-      
+
 				<p class="w3-large">A Purely Logical Being</p>
-      
+
 				<p>In the film, Spock explains "logic clearly dictates that the needs of the many outweigh the needs of the few". As a Vulcan with no emotion or ego, this is what dictates how they act. This is evidenced as he sacrifices himself - exposing himself to deadly levels of radiation - to save the rest of the <i>Enterprise</i>'s crew. Here, his well being is "the few" and the well being of the crew is "the many".</p>
         <p>More evidence of how purely logical he is is exhibited when the <i>Genisis Project</i> is explained as he remains nonchalant about the device's capabilities as, used properly, it would serve the better the many at the cost of the few (the few being unlucky beings that scans did not detect on "lifeless" planets)</p>
-    
+
 			</div>
-    
+
 			<div class="w3-half">
-      
+
 				<p class="w3-large">A Part of a Duo</p>
-      
+
         <p>As explained in Lane Roth's writing, <i>Death and Rebirth in Star Trek II: The Wrath of Khan</i>, This film exhibits a <i>"double-hero</i> where Kirk and Spock represent two facets of of one identity. Spock and Kirk are both imperfect in different ways, leading to them walking different metaphorical paths on the same physical journey. Furthermore, in both instances where Spock tells Kirk they are friends, they are shown framed as equals.</p>
         <p>In addition to this, the movie calls upon the book <i>A Tale of Two Cities</i> by Chales Dickens multiple times. In the novel, there is also a double-hero in which one half of the duo dies to save the other half. This reflects how Spock dies to allow Kirk and his crew to live on.</p>
 				<p>Note that this is still a demo page and more information will be added.</p>
-        
+
 			</div>
-      
- 			
+
+
 		</div>
     <div class="w3-row-padding w3-center" style="margin-top:16px margin-bottom:16px">
-    
+
 			<div class="w3-full">
-       
+
 				<p><a href="start.html" class="w3-button pentagonite-darkish">Play Again?</a></p>
-    
+
 			</div>
-  
+
 		</div>
 
 	</div>
-
-	
-
-
-	
-	<div includehtml="/Pageinclude/pagefooter.html"></div> 
-	<script>
-		
-	// Modal Image Gallery
-	function onClick(element) {
-	  document.getElementById("img01").src = element.src;
-	  document.getElementById("modal01").style.display = "block";
-	  var captionText = document.getElementById("caption");
-	  captionText.innerHTML = element.alt;
-	}
-	
-	
-	// Toggle between showing and hiding the sidebar when clicking the menu icon
-	var NavBar = document.getElementById("NavBar");
-	
-	function w3_open() {
-	    if (mySidebar.style.display === 'block') {
-	        mySidebar.style.display = 'none';
-	    } else {
-	        mySidebar.style.display = 'block';
-	    }
-	}
-	
-	// Close the sidebar with the close button
-	function w3_close() {
-	    mySidebar.style.display = "none";
-	}
-	</script>
-	<script src="/javascripts/includehtml.js"></script>
-	<script src="/javascripts/Scrollbar.js"></script>
-
-	<script>
-	
-		includeHTML();
-	</script>
-
-</body>
-
-</html>
