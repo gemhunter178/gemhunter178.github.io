@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+
+<!--Started with some template on w3schools.com, heavily modified by Gem -->
+
+<html>
+
+<head>
+
+	<title>FPV Quadcopter - Engineering</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body class="pentagonite-superfaded">
+	
+	<!-- STUFF GOES HERE -->
+	<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+		<div class="w3-twothird">
+			 <div class="w3-card-4 w3-margin whitecolor">
+    <div style="max-height: 300px!important; overflow: hidden">
+      <a href="https://www.flickr.com/gp/157149974@N06/CbD653" target="_blank"><img src="//c1.staticflickr.com/8/7920/46226102395_50adf06f71_h.jpg" alt="FPV racing quadcopter/drone I built. A balance of cost and performance" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+    </div>
+    <div class="w3-container">
+      <h3><b>FPV Racing Quadcopter</b></h3>
+        <h5>A Balance of Cost and Performance <span class="w3-opacity"><i>2017, May</i></span></h5>
+    </div>
+    <div class="w3-container">
+      <p style="text-indent: 25px">I really like making cool projects that break a usual constraint I'm given. In this case, the limitation of "being on the ground" and "low speed."
+      </p>
+	    <a href="https://www.flickr.com/gp/157149974@N06/7y6804" target="_blank"><img src="//c1.staticflickr.com/8/7817/46226104985_b5348331dc_h.jpg" alt="Close up of the FPV camera" class="gallerypic" style="max-width: 50%; max-height: none; margin: 0 auto"></a>
+      <p style="text-indent: 25px">Usually, the boards we use in the classroom never (intentionally) leave the ground. So, to take to the skies, I decided to start this project on my own terms in the Fall of 2016.
+      </p><p style="text-indent: 25px">First thing I realized was if I was going to build anything that could easily fly free outdoors, it was going to cost me. So, I spent the next month or so researching what parts I need, what cost can be expected and comparing this to what I wanted to get out of my copter.
+      </p><p style="text-indent: 25px">I bought all the necessary parts to fly, leaving a few parts that I would buy later such a monitor for the camera. As soon as the parts arrived, I brought them to the makerspace I go to for assembly. Here, I connected, soldered, calibrated, and did everything else I needed to get my copter flying. 
+      </p><p style="text-indent: 25px">Being at the makerspace meant that I could ask some experienced members for help whenever I encountered a problem I could not easily fix. This expedited the process. Before winter came, the copter was ready for its maiden flight.
+      </p>
+	    <a href="https://www.flickr.com/gp/157149974@N06/4q71Kw" target="_blank"><img src="//c1.staticflickr.com/8/7852/46416581864_5208d6fecb_h.jpg" alt="The quadcopter starting up" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+      
+      
+<!--Need a new paragraph?: <p style="text-indent: 25px">
+      </p>-->
+      
+      </div>
+	<div class="w3-row">
+        	<div class="w3-col m8 s12" style="margin-left: 16px">
+        	  <p><button onclick="goBack()" class="w3-button w3-padding-large whitecolor w3-border"><b>Go back! »</b></button></p>
+        	</div>
+    	</div>
+     </div>
+		</div>
+		<div class="w3-third">
+			<div includehtml="/Engineering/0_include/sidebar.html"></div>
+		</div>
+	
+	</div>
+<!-- END OF STUFF -->
+
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+	</script>
+
+	
+	<!-- Extra scripts added by me -->	
+	<script src="/javascripts/includehtml.js"></script>
+	
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
+
+	<script>
+		includeHTML();
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+
+<!--Started with some template on w3schools.com, heavily modified by Gem -->
+
+<html>
+
+<head>
+
+	<title>May 23rd, 12018 - The Blog of Gem</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body class="pentagonite-superfaded">
+	
+	<!-- STUFF GOES HERE -->
+	<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+		<div class="w3-twothird">
+			 <div class="w3-card-4 w3-margin whitecolor">
+    <div style="max-height: 300px!important; overflow: hidden">
+      <a href="https://c1.staticflickr.com/1/898/42314666951_f903c0c7db_k.jpg" target="_blank"><img src="https://c1.staticflickr.com/1/898/42314666951_f903c0c7db_k.jpg" alt="Toronto skyline at night. 5/23/12018" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+    </div>
+    <div class="w3-container">
+      <h3><b>Night Shots</b></h3>
+      <h5>There is something that can't be caught in photos <span class="w3-opacity">May 23rd, 12018</span></h5>
+    </div>
+    <div class="w3-container">
+      <p style="text-indent: 25px">Once again I find myself looking at something online and saying "hey, maybe I can do that". Recently, I revisited a site I saw a few years back about <a href="http://www.justinngphoto.com/2014/05/16/how-i-photograph-the-milky-way-from-light-polluted-skies-of-singapore/">photographing hard-to-see celestial stuff with high light pollution</a> and thought I'd try it myself.
+      </p><p style="text-indent: 25px">So, today, I decided there is no better time to go to the Toronto islands at 9PM and try my hand at it. (Though, I should note, I checked some star maps....we could not get a picture of the Milky Way in the background with the time and place we were going at.)
+      </p><p style="text-indent: 25px">I grabbed my camera as well as a GH4 from class and a tripod from a classmate and made my way over. We (a friend joined me) made it over to take the 9 o'clock ferry. In stark contrast to <a href="/Blog/12018May20">Sunday</a> there was barely anyone around. We could sit down on the ferry and still see (it was just 6 non-crew members I think). That's when I first started seeing the scene of a city at night. Boy was I impressed.
+      </p><p style="text-indent: 25px">When we got to the island, we looked back to find a city alight with the lights of thousands who were working, living...or just forgot to turn off their office light. It was quite a spectacle. For the first 20 minutes, we were trying to find an unobstructed view (there were still some people with similar ideas...or just having fun). Once we did, we set down the tripod and all was set to start shooting.
+      </p><p style="text-indent: 25px">Sometimes you got to stand back from the camera.
+      </p><p style="text-indent: 25px">Holy crap that view was amazing. I do recommend you see it for yourself sometime. Anyways, after getting some nice images (like above), we stuck around for a little bit, but all things must come to an end sometime.
+      </p><p style="text-indent: 25px">So, we boarded the 10:15PM Ferry back before we got stuck on the island for another half hour.
+      </p><p style="text-indent: 25px">Maybe I'll get another chance to see that.
+      </p>
+    
+<!--Need a new paragraph?: <p style="text-indent: 25px">
+      </p>-->
+      
+      </div>
+	<div class="w3-row">
+        	<div class="w3-col m8 s12" style="margin-left: 16px">
+        	  <p><button onclick="goBack()" class="w3-button w3-padding-large whitecolor w3-border"><b>Go back! »</b></button></p>
+        	</div>
+    	</div>
+     </div>
+		</div>
+		<div class="w3-third">
+			<div includehtml="/Blog/blogside.html"></div>
+		</div>
+	
+	</div>
+	<div includehtml="/Pageinclude/BlogBar.html"></div>
+<!-- END OF STUFF -->
+
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+	</script>
+
+	
+	<!-- Extra scripts added by me -->	
+	<script src="/javascripts/includehtml.js"></script>
+	
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
+
+	<script>
+	
+		includeHTML();
+	</script>
+
+
+</body>
+
+</html>

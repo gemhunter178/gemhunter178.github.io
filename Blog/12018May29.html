@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+
+<!--Started with some template on w3schools.com, heavily modified by Gem -->
+
+<html>
+
+<head>
+
+	<title>May 29th, 12018 - The Blog of Gem</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body class="pentagonite-superfaded">
+	
+	<!-- STUFF GOES HERE -->
+	<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+		<div class="w3-twothird">
+			 <div class="w3-card-4 w3-margin whitecolor">
+    <div style="max-height: 300px!important; overflow: hidden">
+      <a href="https://c1.staticflickr.com/2/1728/42445518431_a171518939_k.jpg" target="_blank"><img src="https://c1.staticflickr.com/2/1728/42445518431_a171518939_k.jpg" alt="Fooling around with a Ricoh Theta V" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+    </div>
+    <div class="w3-container">
+      <h3><b>Fooling Around with a 360° camera</b></h3>
+      <h5>"Tiny planet" views are fun <span class="w3-opacity">May 29th, 12018</span></h5>
+    </div>
+    <div class="w3-container">
+      <p style="text-indent: 25px">So, today was they start of work in 360° video/VR. So, we were assigned new groups and given Ricoh Theta V's to go do some test shoots with.
+      </p><p style="text-indent: 25px">So, we ran around the building (in one case, literally) with the camera and got some strange looks. All in a days work.
+      </p><p style="text-indent: 25px">Afterwards, we let the program stitch the videos together and went to lunch. After lunch, we reviewed the videos for some discussion on how to achieve certain effects and what not to do. Once this was over, we were assigned another aspect of 360° video and sent off to do more filming and tests.
+      </p><p style="text-indent: 25px">With some new pointers to software and advice on 360° video, we were given the topic for the week. Our topic is to be "the Toronto that isn't". We were to mull it over tonight.
+      </p><p style="text-indent: 25px">Before going back to thinking of ideas, my afternoon was spent discussing the education systems of two different cultures with a friend, proceeded by dinner in Toronto's Chinatown with a larger group of friends. It was delicious.....and we got mochi on the way back!
+      </p><p style="text-indent: 25px">When we got back, topic in hand, we thought of a few ideas that we might be able to do for our projects this week. I'm not going to spoil it here and now (partly for the surprise, party since I don't know if we'll be able to finish/which one we will pursue).
+      </p><p style="text-indent: 25px">Anyways, once again, it is very late here and I should go to bed so I am less tired for class tomorrow.
+      </p><p style="text-indent: 25px">Until then, goodnight! (or good morning depending on where you are in the world).
+      </p>
+      
+<!--Need a new paragraph?: <p style="text-indent: 25px">
+      </p>-->
+      
+      </div>
+	<div class="w3-row">
+        	<div class="w3-col m8 s12" style="margin-left: 16px">
+        	  <p><button onclick="goBack()" class="w3-button w3-padding-large whitecolor w3-border"><b>Go back! »</b></button></p>
+        	</div>
+    	</div>
+     </div>
+		</div>
+		<div class="w3-third">
+			<div includehtml="/Blog/blogside.html"></div>
+		</div>
+	
+	</div>
+	<div includehtml="/Pageinclude/BlogBar.html"></div>
+<!-- END OF STUFF -->
+
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+	</script>
+
+	
+	<!-- Extra scripts added by me -->	
+	<script src="/javascripts/includehtml.js"></script>
+	
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
+
+	<script>
+	
+		includeHTML();
+	</script>
+
+
+</body>
+
+</html>

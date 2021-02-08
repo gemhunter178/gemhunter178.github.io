@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+
+<!--Started with some template on w3schools.com, heavily modified by Gem -->
+
+<html>
+
+<head>
+
+	<title>June 16th, 12018 - The Blog of Gem</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body class="pentagonite-superfaded">
+	
+	<!-- STUFF GOES HERE -->
+	<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+		<div class="w3-twothird">
+			 <div class="w3-card-4 w3-margin whitecolor">
+    <div style="max-height: 300px!important; overflow: hidden">
+      <a href="https://www.flickr.com/photos/157149974@N06/28969699438/in/dateposted-public/" target="_blank"><img src="https://c1.staticflickr.com/2/1744/28969699438_dbcf74d9cc_k.jpg" alt="Thames River Picture"class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+    </div>
+    <div class="w3-container">
+      <h3><b>Last Day in Sheffield, first in London</b></h3>
+      <h5>I'm exhausted <span class="w3-opacity">June 16th, 12018</span></h5>
+    </div>
+    <div class="w3-container">
+      <p style="text-indent: 25px"> Yesterday we had final presentations. It's odd that I won't be seeing the people that came on this journey with me until next fall. Anyways, I was able to have a good time talking with them last night. I had to try to sleep early since I needed to catch a train at 5:29AM.
+      </p><p style="text-indent: 25px">I almost missed it, the train left a few minutes after I got on. I did some final work as I watched the pastures and countryside roll on by. There's so much greenery here... and so many cows!
+      </p><p style="text-indent: 25px">I pulled into London St. Pancreas station at around 7:30AM. My dad was there to greet me and I soon met up with my family, whom I haven't seen for 5 weeks. My brother even more.
+      </p><p style="text-indent: 25px">We walked all over London (zone 1) today. A lot of gift shops, 2 galleries, a few filled-up tourist locations, and a nice night walk along the River Thames and my day was over.
+      </p><p style="text-indent: 25px">I am a little dizzy from exhaustion at this point, so, I'll catch up with you all later.
+      </p>
+      
+<!--Need a new paragraph?: <p style="text-indent: 25px">
+      </p>-->
+      
+      </div>
+	<div class="w3-row">
+        	<div class="w3-col m8 s12" style="margin-left: 16px">
+        	  <p><button onclick="goBack()" class="w3-button w3-padding-large whitecolor w3-border"><b>Go back! »</b></button></p>
+        	</div>
+    	</div>
+     </div>
+		</div>
+		<div class="w3-third">
+			<div includehtml="/Blog/blogside.html"></div>
+		</div>
+	
+	</div>
+	<div includehtml="/Pageinclude/BlogBar.html"></div>
+<!-- END OF STUFF -->
+
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+	</script>
+
+	
+	<!-- Extra scripts added by me -->	
+	<script src="/javascripts/includehtml.js"></script>
+	
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
+
+	<script>
+		includeHTML();
+	</script>
+
+
+</body>
+
+</html>

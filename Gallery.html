@@ -10,66 +10,40 @@ permalink: /gallery
 <div class="w3-container pentagoniteblue" style="padding:8px 8px">
   <h3 class="w3-center">Welcome to the Gallery!</h3>
   <div class="w3-center">
-      <p>This page contains a mix of the things I do! To explore more of my work, click on any of the mediums listed below. Click on any image to see it in its own screen.</p>
+      <p>The Gallery is current under reconstruction as theres some things I need to change...</p>
+	  <a href="https://twitter.com/gemhunter178"><p>Check out my Twitter if you want to see some stuff I've done recently though!</p></a>
   </div>
 </div>
 
-<!-- Subject Pagination -->
-{% include gallerypages.html %}
-
-<!-- Photo grid -->
-<div class="w3-row galleryback">
-  <div class="w3-half">
-    <img src="Pictures/Main_banner.jpg" class="gallerypic" onclick="onClick(this)" alt="Welcome to my website! The main banner image in glorious 4K">
-    <img src="//c1.staticflickr.com/2/1864/44302822972_6b721b75c3_k.jpg" class="gallerypic" onclick="onClick(this)" alt="A sunrise at Good Harbor Beach, in MA, USA. Taken 8/26/12018">
-    <img src="https://c1.staticflickr.com/1/959/27466815087_7f8561ae98_k.jpg" class="gallerypic" onclick="onClick(this)" alt="This is made from a composite of 2 raw photos taken 5/23/12018, in an attempt to resolve some stars in the night sky (some are visible if one looks closely near the top, but may be hard to see from noise)">
-  </div>
-  <div class="w3-quarter">
-    <img src="//c1.staticflickr.com/2/1935/45256702651_869e4dd01e_k.jpg" class="gallerypic" onclick="onClick(this)" alt="An Elm Leaf carved into a granny smith">
-    <img src="//c1.staticflickr.com/2/1958/45256702811_fb413cd0b9_b.jpg" class="gallerypic" onclick="onClick(this)" alt="Dragon Fruit arranged in yogurt! These thin slices were not easy.">
-    <img src="//c1.staticflickr.com/2/1936/31382797128_c1472cf533_k.jpg" class="gallerypic" onclick="onClick(this)" alt="This is a cube of solid African Blackwood, hand polished by me.<br>Note: I do not usually use threatened woods, this is a cut off from others">
-    <img src="https://c1.staticflickr.com/1/978/42186938612_bc2d330583_k.jpg" class="gallerypic" onclick="onClick(this)" alt="A painting (acrylic) of a cat, finished June 7, 12015">
-  </div>
-  <div class="w3-quarter">
-    <img src="//c1.staticflickr.com/2/1962/44534403164_31f515dd5e_k.jpg" class="gallerypic" onclick="onClick(this)" alt="Some wooden spheres I made, finished with some pen wax">
-    <img src="//c1.staticflickr.com/2/1926/31382797108_44eeadc869_k.jpg" class="gallerypic" onclick="onClick(this)" alt="A Flower carved into a beet. Yes, a beet.">
-    <img src="//c1.staticflickr.com/2/1912/31382796498_135f6dff77_k.jpg" class="gallerypic" onclick="onClick(this)" alt="Curly Maple plate! Finished with 3+ coats of tung oil">
-    <img src="https://c1.staticflickr.com/1/980/41511500734_1b9d277912_h.jpg" class="gallerypic" onclick="onClick(this)" alt="A painting (acrylic) of a flower, finished June 16, 12013">
-  </div>
 <!-- REFERENCE for extra pics: <img src="" class="gallerypic" onclick="onClick(this)" alt=""> -->
 
-<!-- split section -->
-</div>
-<div class="w3-row">
-  <div class="w3-half">
- </div>
-
- <div class="w3-half">
+  <!-- split section -->
   </div>
-</div>
+  <div class="w3-row">
+    <div class="w3-half">
+   </div>
 
-<!-- Pagination
-<div class="w3-center w3-padding-16">
-  <div class="w3-bar">
-    <a href="#" class="w3-bar-item w3-button "><i class="fa fa-angle-left"></i></a>
-    <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-    <a href="#" class="w3-bar-item w3-button ">2</a>
-    <a href="#" class="w3-bar-item w3-button ">3</a>
-    <a href="#" class="w3-bar-item w3-button ">4</a>
-    <a href="#" class="w3-bar-item w3-button "><i class="fa fa-angle-right"></i></a>
+   <div class="w3-half">
+    </div>
   </div>
-</div>-->
+
+  <!-- Pagination
+  <div class="w3-center w3-padding-16">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button "><i class="fa fa-angle-left"></i></a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button ">2</a>
+      <a href="#" class="w3-bar-item w3-button ">3</a>
+      <a href="#" class="w3-bar-item w3-button ">4</a>
+      <a href="#" class="w3-bar-item w3-button "><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>-->
 </div>
 
 <div id="modal01" class="w3-modal pentagonite-dark" style="padding-top:0" onclick="this.style.display='none'">
-  <span class="w3-button w3-black w3-xlarge w3-display-topright"><i class="fa fa-close"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption"></p>
-  </div>
+    <span class="w3-button w3-black w3-xlarge w3-display-topright"><i class="fa fa-close"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
 </div>
-
-<script src="/javascripts/gallery.js"></script>
-
-<!-- Extra scripts added by me -->
-<script src="/javascripts/Scrollbar.js"></script>

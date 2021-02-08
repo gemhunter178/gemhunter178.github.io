@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+
+<!--Started with some template on w3schools.com, heavily modified by Gem -->
+
+<html>
+
+<head>
+
+	<title>June 7th, 12018 - The Blog of Gem</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body class="pentagonite-superfaded">
+	
+	<!-- STUFF GOES HERE -->
+	<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+		<div class="w3-twothird">
+			 <div class="w3-card-4 w3-margin whitecolor">
+    <div style="max-height: 300px!important; overflow: hidden">
+      <a href="https://www.flickr.com/photos/157149974@N06/42656416451/in/shares-8A9szZ/" target="_blank"><img src="https://c1.staticflickr.com/2/1735/42656416451_d7bb0b5691_k.jpg" alt="Sheffield Docfest Start!" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+    </div>
+    <div class="w3-container">
+      <h3><b>Docfest Start!</b></h3>
+      <h5>An odd, pretty draining day <span class="w3-opacity">June 7th, 12018</span></h5>
+    </div>
+    <div class="w3-container">
+      <p style="text-indent: 25px">So, <a href="https://sheffdocfest.com/" target="_blank">Docfest</a> started today...
+      </p><p style="text-indent: 25px">I was prepared to sign up for AR/VR things today, but aparently they're having technical difficulties. I did manage to be first in line for <a href="https://www.facebook.com/events/250162182217763/" target="_blank">Doublethink</a>. Of course, I chose HOPE for that. I think they did it justice. It was very immersive, especially for a flat screen. Also today, I got to go see <a href="http://braincontrolledmovie.co.uk/" target="_blank">The Moment</a> as a viwer (it's cool since one person is he "driver" and controls the movie by their brain). Can't say I'd like it in a traditional sense, but the technology is interesting and shows high potential.
+      </p><p style="text-indent: 25px">That's all from me today. Gotta be in line for AR/VR stuff tomorrow!
+      </p>
+      
+<!--Need a new paragraph?: <p style="text-indent: 25px">
+      </p>-->
+      
+      </div>
+	<div class="w3-row">
+        	<div class="w3-col m8 s12" style="margin-left: 16px">
+        	  <p><button onclick="goBack()" class="w3-button w3-padding-large whitecolor w3-border"><b>Go back! »</b></button></p>
+        	</div>
+    	</div>
+     </div>
+		</div>
+		<div class="w3-third">
+			<div includehtml="/Blog/blogside.html"></div>
+		</div>
+	
+	</div>
+	<div includehtml="/Pageinclude/BlogBar.html"></div>
+<!-- END OF STUFF -->
+
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+	</script>
+
+	
+	<!-- Extra scripts added by me -->	
+	<script src="/javascripts/includehtml.js"></script>
+	
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
+
+	<script>
+		includeHTML();
+	</script>
+
+
+</body>
+
+</html>

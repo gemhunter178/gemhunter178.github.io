@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+
+<!--Started with some template on w3schools.com, heavily modified by Gem -->
+
+<html>
+
+<head>
+
+	<title>3D Printing - Engineering</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body class="pentagonite-superfaded">
+	
+	<!-- STUFF GOES HERE -->
+	<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+		<div class="w3-twothird">
+			 <div class="w3-card-4 w3-margin whitecolor">
+    <div style="max-height: 300px!important; overflow: hidden">
+      <a href="https://flic.kr/p/2eNTEBK" target="_blank"><img src="https://c1.staticflickr.com/8/7864/47131969961_9c9a51f515_h.jpg" alt="3D Printed design I made" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+    </div>
+    <div class="w3-container">
+      <h3><b>3D Printing</b></h3>
+        <h5>A Running List of 3D printed stuff. <span class="w3-opacity"><i>Ongoing...</i></span></h5>
+    </div>
+    <div class="w3-container">
+      <p style="text-indent: 25px">I have been 3D printing ever since my brother got a SeeMeeCNC Rostock printer many many years ago.
+      </p><p style="text-indent: 25px">Never ceases to amaze me how something I design on a computer can be made into reality in the matter of hours.... now potentially minutes!
+      </p><p style="text-indent: 25px">Since then, I have used many different FDM printers - some in school, some at the makerspace - and have been introduced to even more types of 3D printers, such as powder printing or using layered sheets of paper.
+      </p><p style="text-indent: 25px">Using 3D printing, I have made many stand designs for my various other hobbies, as well as making some example objects for display. I have also designed and printed an "electric hardanger fiddle" that is only missing a good set of tuning pegs at this point.
+      </p><p style="text-indent: 25px">Note that this page is unfinished (sorry.)
+      </p>
+    <div class="w3-row">
+	<div class="w3-half">
+	      <a href="https://www.flickr.com/gp/157149974@N06/YRp9Mo" target="_blank"><img src="//c1.staticflickr.com/8/7904/46226103725_80d78a386f_n.jpg" alt="3D printed designs being used! My own design, my own plants." class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+	      <a href="https://www.flickr.com/gp/157149974@N06/14eWi9" target="_blank"><img src="//c1.staticflickr.com/8/7804/46226103115_7a456faf8b_n.jpg" alt="Some 3D printed crystals - a close up. My own design!" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+	    </div>
+	    <div class="w3-half">
+	      <a href="https://www.flickr.com/gp/157149974@N06/1Zf0C0" target="_blank"><img src="//c1.staticflickr.com/8/7923/46226102745_f797198fd2_n.jpg" alt="More uses for a 3D printed design! My own design, my own turned sphere (yes I do woodworking too)" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+	      <a href="https://www.flickr.com/gp/157149974@N06/6Gj65p" target="_blank"><img src="//c1.staticflickr.com/8/7907/46226103485_3129d7d8aa_n.jpg" alt="3D printed crystals, my own design!." class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+	    </div>
+	</div>
+      
+      
+<!--Need a new paragraph?: <p style="text-indent: 25px">
+      </p>-->
+      
+      </div>
+	<div class="w3-row">
+        	<div class="w3-col m8 s12" style="margin-left: 16px">
+        	  <p><button onclick="goBack()" class="w3-button w3-padding-large whitecolor w3-border"><b>Go back! »</b></button></p>
+        	</div>
+    	</div>
+     </div>
+		</div>
+		<div class="w3-third">
+			<div includehtml="/Engineering/0_include/sidebar.html"></div>
+		</div>
+	
+	</div>
+<!-- END OF STUFF -->
+
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+	</script>
+
+	
+	<!-- Extra scripts added by me -->	
+	<script src="/javascripts/includehtml.js"></script>
+	
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
+
+	<script>
+		includeHTML();
+	</script>
+
+
+</body>
+
+</html>

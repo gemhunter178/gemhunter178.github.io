@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+
+<!--Started with some template on w3schools.com, heavily modified by Gem -->
+
+<html>
+
+<head>
+
+	<title>The Blog of Gem</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body class="pentagonite-superfaded">
+	
+	<!-- STUFF GOES HERE -->
+	<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+		<div class="w3-twothird">
+			 <div class="w3-card-4 w3-margin whitecolor">
+         <div style="max-height: 300px!important; overflow: hidden">
+            <a href="https://c1.staticflickr.com/1/823/41441208614_9ad8cef463_k.jpg" target="_blank"><img src="https://c1.staticflickr.com/1/823/41441208614_9ad8cef463_k.jpg" alt="Riverdale Farm" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+         </div>
+       <div class="w3-container">
+         <h3><b>A Dérive in Riverdale Farm</b></h3>
+         <h5>Where the City gives way to Farm. <span class="w3-opacity">May 16th, 12018</span></h5>
+       </div>
+       <div class="w3-container">
+         <p style="text-indent: 25px">Before I say anything, today will be a test of a longer blog post and functionality with this. Ok, that being said, today we were teamed up into partners and then sent off to take a dérive in a location. My group was assigned to <a href="http://riverdalefarmtoronto.ca/">Riverdale Farm</a>. 
+	   </p><p style="text-indent: 25px">So, what we did was we bought a Presto card and made our way to the Parliament St. stop in Toronto. The streetcar that was supposed to bring us there was actually not operational with the repairs/maintenance going on in Cabbagetown, so, we got dropped off a bit farther off than expected. The neightborhood to the Farm was nice: older styled, close, buildings.
+           </p><p style="text-indent: 25px">Once at the Farm, the first thing we noticed was the farm smell: a mix of hay and animals. This was indeed an actual farm this close to downtown! We spent about 2 hours wandering about and taking it in. At first we followed animal sightings and sounds, like little kids would. Then, we took whatever paths we have not taken yet.
+           </p><p style="text-indent: 25px">Overall, I would like to go back someday, perhaps take a few pictures (we were instructed not to do so) and explore the neighboring park and Cabbagetown. Definitely worth a trip if you have a few hours to spend!</p>
+       </div>
+	<div class="w3-row">
+        	<div class="w3-col m8 s12" style="margin-left: 16px">
+        	  <p><button onclick="goBack()" class="w3-button w3-padding-large whitecolor w3-border"><b>Go back! »</b></button></p>
+        	</div>
+    	</div>
+     </div>
+		</div>
+		<div class="w3-third">
+			<div includehtml="/Blog/blogside.html"></div>
+		</div>
+	
+	</div>
+	<div includehtml="/Pageinclude/BlogBar.html"></div>
+<!-- END OF STUFF -->
+
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+	</script>
+
+	
+	<!-- Extra scripts added by me -->	
+	<script src="/javascripts/includehtml.js"></script>
+
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
+
+	<script>
+	
+		includeHTML();
+
+	</script>
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+
+<!--Started with some template on w3schools.com, heavily modified by Gem -->
+
+<html>
+
+<head>
+
+	<title>May 22nd, 12018 - The Blog of Gem</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body class="pentagonite-superfaded">
+	
+	<!-- STUFF GOES HERE -->
+	<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+		<div class="w3-twothird">
+			 <div class="w3-card-4 w3-margin whitecolor">
+    <div style="max-height: 300px!important; overflow: hidden">
+      <a href="https://c1.staticflickr.com/1/981/27420323157_54550ce252_k.jpg" target="_blank"><img src="https://c1.staticflickr.com/1/981/27420323157_54550ce252_k.jpg" alt="A train passing by us, 5/22/12018" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+    </div>
+    <div class="w3-container">
+      <h3><b>A New Team</b></h3>
+      <h5>People are cool <span class="w3-opacity">May 22nd, 12018</span></h5>
+    </div>
+    <div class="w3-container">
+      <p style="text-indent: 25px">Today, we got a brief review and discussion about what we learned yesterday as well as the software we will be using. Honestly, I was somewhat disapointed that all the software we are using are iOS only (I don't have an Apple device).
+      </p><p style="text-indent: 25px">On the flip side, we got to know what groups and what communities we would be placed in for our next project! I got placed with the group that will be covering the Bentway Skateboarding Group. At around 10:30AM, we met the people that would be showing us around.
+      </p><p style="text-indent: 25px">At this point, we joined them in a tour of the places we will be covering by adding augumented reality points. These points will show up in a certain app and show some the information we want to convey at the location. Anyways, we visited and took shots of the neighborhood as well as the project sites. The spray painted murals at these sites were amazing, especially since we usually think of "graffiti" as a detremental addition to places.
+      </p><p style="text-indent: 25px">After our visit and lunch, our class met at AGO (Art Gallery of Ontario) for a field trip. There, we were able to see the 4 ReBlink paintings left in the gallery (ReBlink was an AR experience that added another layer on top of the paintings virtually. For example, it made the painting look 3D and stick out of the frame).
+      </p><p style="text-indent: 25px">Today was definitely quite a day! Tomorrow we will be working on a prototype/idea on what we want our project to look like.
+      </p>
+	    
+<!--Need a new paragraph?: <p style="text-indent: 25px">
+      </p>-->
+      
+      </div>
+	<div class="w3-row">
+        	<div class="w3-col m8 s12" style="margin-left: 16px">
+        	  <p><button onclick="goBack()" class="w3-button w3-padding-large whitecolor w3-border"><b>Go back! »</b></button></p>
+        	</div>
+    	</div>
+     </div>
+		</div>
+		<div class="w3-third">
+			<div includehtml="/Blog/blogside.html"></div>
+		</div>
+	
+	</div>
+	<div includehtml="/Pageinclude/BlogBar.html"></div>
+<!-- END OF STUFF -->
+
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+	</script>
+
+	
+	<!-- Extra scripts added by me -->	
+	<script src="/javascripts/includehtml.js"></script>
+	
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
+
+	<script>
+	
+		includeHTML();
+	</script>
+
+
+</body>
+
+</html>

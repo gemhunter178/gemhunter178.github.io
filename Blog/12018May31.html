@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+
+<!--Started with some template on w3schools.com, heavily modified by Gem -->
+
+<html>
+
+<head>
+
+	<title>May 31st, 12018 - The Blog of Gem</title>
+	
+<link rel="icon" href="/Pictures/Logo_favicon.png">
+<meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/MainStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Hind Vadodara", sans-serif
+		}
+		
+body, html {
+    
+			height: 100%;
+    
+			line-height: 1.8;
+		
+}
+		
+.w3-bar .w3-button {
+    
+			padding: 16px;
+		
+}
+	
+</style>
+
+</head>
+
+
+
+
+<body class="pentagonite-superfaded">
+	
+	<!-- STUFF GOES HERE -->
+	<div class="w3-row w3-content" style="margin-top:16px;margin-bottom:16px;max-width:90%" id="home">
+		<div class="w3-twothird">
+			 <div class="w3-card-4 w3-margin whitecolor">
+    <div style="max-height: 300px!important; overflow: hidden">
+      <a href="https://www.flickr.com/photos/157149974@N06/41750770584/in/dateposted-public/" target="_blank"><img src="https://c1.staticflickr.com/2/1759/41750770584_cb02bf6475_k.jpg" alt="Gardiner Expressay at night, long exposure." class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+    </div>
+    <div class="w3-container">
+      <h3><b>End of Month, CN tower, etc</b></h3>
+      <h5>It's pretty up there <span class="w3-opacity">May 31st, 12018</span></h5>
+    </div>
+    <div class="w3-container">
+      <p style="text-indent: 25px">Yesterday (sorry no blog post, but I didn't plan on doing them daily anyways), I went with a friend to see <a href="https://www.ripleyaquariums.com/canada" target="_blank">Ripley's Aquarium</a> and the <a href="www.cntower.ca/intro.html" target="_blank">CN tower</a>. I always love a good aquarium, and this was no different.
+      </p><p style="text-indent: 25px"> Now, going to the CN tower, we went at around 8:45PM, which meant we got to see the city transititon from day into night. It was an amazing view. I'll let the pictures below show some of it, but they don't do it justice!
+<div class="w3-row">
+    <div class="w3-third">
+      <a href="https://www.flickr.com/photos/157149974@N06/27602583087/in/dateposted-public/" target="_blank"><img src="https://c1.staticflickr.com/1/898/27602583087_2051edabe7_h.jpg" alt="Toronto in the evening" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+    </div>
+    <div class="w3-third">
+      <a href="https://www.flickr.com/photos/157149974@N06/41750770584/in/dateposted-public/" target="_blank"><img src="https://c1.staticflickr.com/2/1759/41750770584_ef227bf18d_h.jpg" alt="Gardiner Expressay at night, long exposure." class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+    </div>
+    <div class="w3-third">
+      <a href="https://www.flickr.com/photos/157149974@N06/27602581917/in/dateposted-public/" target="_blank"><img src="https://c1.staticflickr.com/1/881/27602581917_63b62bd202_h.jpg" alt="Toronto at night" class="gallerypic" style="max-width: 100%; max-height: none; margin: 0 auto"></a>
+    </div>
+</div>
+      </p><p style="text-indent: 25px">Today we plan on seeing the <a href="https://www.ontariosciencecentre.ca/" target="_blank">Science Centre</a>. I'll probably post about that sooner or later.
+      </p><p style="text-indent: 25px">UPDATE: The Ontario Science Centre was cool, but very child/familiy oriented. It kinda sucks that is takes about an hour to get there by public transport though. Even though I was a bit underwhelmed by he experience, it's still a good place to visit if you haven't yet been to the <a href="https://mos.org/" target="_blank">Boston Science Museum</a> and/or you have younger children/need a family place to go to.
+      </p>
+      
+<!--Need a new paragraph?: <p style="text-indent: 25px">
+      </p>-->
+      
+      </div>
+	<div class="w3-row">
+        	<div class="w3-col m8 s12" style="margin-left: 16px">
+        	  <p><button onclick="goBack()" class="w3-button w3-padding-large whitecolor w3-border"><b>Go back! »</b></button></p>
+        	</div>
+    	</div>
+     </div>
+		</div>
+		<div class="w3-third">
+			<div includehtml="/Blog/blogside.html"></div>
+		</div>
+	
+	</div>
+	<div includehtml="/Pageinclude/BlogBar.html"></div>
+<!-- END OF STUFF -->
+
+	<div includehtml="/Pageinclude/pagefooter.html"></div> 
+	<script>
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+	</script>
+
+	
+	<!-- Extra scripts added by me -->	
+	<script src="/javascripts/includehtml.js"></script>
+	
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
+
+	<script>
+		includeHTML();
+	</script>
+
+
+</body>
+
+</html>
